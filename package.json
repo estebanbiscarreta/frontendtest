@@ -12,9 +12,9 @@
     }
   ],
   "scripts": {
-    //"start": "gulp dev",
-    //"prepublish": "gulp lint && gulp dist && npm test",
-    //"test": "karma start --single-run --browsers PhantomJS"
+    "start": "gulp dev",
+    "prepublish": "gulp lint && gulp dist && npm test",
+    "test": "karma start --single-run --browsers PhantomJS"
   },
   "repository": {
     "type": "git",
