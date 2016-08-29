@@ -48,7 +48,7 @@ gulp.task('build-css', function () {
         .pipe(concatCss('uxtest.css'))
         .pipe(minifyCSS({keepBreaks:false}))
         .pipe($.rename({suffix: '.min'}))
-        .pipe(gulp.dest('dist/public/css'))
+        .pipe(gulp.dest('dist/css'))
 });
 
 // build-js: concat Js, uglify
@@ -69,21 +69,21 @@ gulp.task('build-js', function() {
         }))
         .pipe(uglify())
         .pipe($.rename({suffix: '.min'}))
-        .pipe(gulp.dest('dist/public/js'));
+        .pipe(gulp.dest('dist/js'));
 });
 
 // Minify HTML
 gulp.task('minify-html', function() {
   return gulp.src('views/index.html')
     .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest(''));
 });
 
 // Start a BrowserSync server, which you can view at http://localhost:3040
 gulp.task('browser-sync', ['build'], function () {
     browserSync.init({
         port: 3040,
-        startPath: '/dist/index.html',
+        startPath: '',
         server: {
             baseDir: [
                 // base path for views and demo assets

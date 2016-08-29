@@ -1,28 +1,20 @@
 {
-  "name": "chico",
-  "version": "2.0.7",
-  "description": "Chico UI is a free and open source collection of easy-to-use web components for developers and designers.",
+  "name": "fronendtest",
+  "version": "1.0.0",
+  "description": "Front-end Test.",
   "author": {
-    "email": "chico@mercadolibre.com"
+    "email": "estebanbiscarreta@gmail.com"
   },
   "contributors": [
     {
-      "name": "Guille Paz",
-      "email": "guille87paz@gmail.com"
-    },
-    {
-      "name": "Hernan Mammana",
-      "email": "hernanmammana@gmail.com"
-    },
-    {
-      "name": "Leandro Linares",
-      "email": "lean8086@gmail.com"
+      "name": "Esteban Biscarreta",
+      "email": "estebanbiscarreta@gmail.com"
     }
   ],
   "scripts": {
-    "start": "gulp dev",
-    "prepublish": "gulp lint && gulp dist && npm test",
-    "test": "karma start --single-run --browsers PhantomJS"
+    //"start": "gulp dev",
+    //"prepublish": "gulp lint && gulp dist && npm test",
+    //"test": "karma start --single-run --browsers PhantomJS"
   },
   "repository": {
     "type": "git",
